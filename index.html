@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ateneo de Davao University - Senior High School</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <nav class="sidebar" id="sidebar"></nav>
+
+  <!-- Overlay -->
+  <div id="overlay"></div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <!-- Topbar -->
+    <header class="topbar">
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <a class="homeB" href="index.html">
+        <div class="topbar-content">
+        <div class="icons">
+          <img src="assets/UniversitySeal.png" alt="University Seal" class="logo">
+          <img src="assets/shsSeal.png" alt="SHS Seal" class="logo">
+        </div>
+        <div class="text-block">
+          <div class="top-title">Ateneo de Davao University</div>
+          <div class="middle-title">Senior High School</div>
+          <div class="bottom-title">
+            Philippine Accrediting Association of Schools, Colleges, and Universities
+          </div>
+        </div>
+      </div>
+    </a>
+    </header>
+
+    <!-- Default Content -->
+    <div class="content-container">
+      <main class="content" id="content">
+        
+      </main>
+    </div>
+
+
+    
+        <!-- Footer -->
+    <footer class="footer">
+      Copyright 2025 | AdDU Senior High School
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="sidebar.js"></script>
+  <script>
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('sidebar').classList.toggle('open');
+      document.body.classList.toggle('sidebar-open');
+    });
+  </script>
+</body>
+</html>
