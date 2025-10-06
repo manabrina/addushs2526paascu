@@ -11,7 +11,7 @@ body {
 
 .evidences li a {
   color: #36b1fd;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 #content a {
