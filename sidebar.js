@@ -199,20 +199,18 @@ sidebar.addEventListener("click", e => {
     const page = target.dataset.page;
     const submenuId = target.dataset.submenu;
 
-    // If it's an Area title (has submenu but no "standard" in page name)
     if (submenuId && (!page || !page.includes("standard"))) {
       document.getElementById(submenuId).classList.toggle("open");
       return;
     }
 
-    // If it's a Standard link
+    
     if (page) {
       loadContent(page);
-
-      // Close sidebar on mobile after loading
+      
       if (window.innerWidth <= 768) {
         document.getElementById("sidebar").classList.remove("open");
-        document.body.classList.remove("sidebar-open"); // remove overlay if you use it
+        document.body.classList.remove("sidebar-open");
       }
     }
   }
