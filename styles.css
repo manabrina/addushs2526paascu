@@ -1,6 +1,14 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('fonts/MyFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'MyFont', sans-serif;
   display: flex;
   min-height: 100vh;
 }
@@ -214,7 +222,7 @@ body {
 
 /* Main content typography */
 #content {
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'MyFont', sans-serif;
   font-size: 24px;          
   line-height: 1.6;         
   color: #fff;              
